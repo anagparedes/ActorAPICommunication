@@ -7,6 +7,6 @@ namespace WebServiceActorApi.Services
     {
         //[Get("/en/API/SearchName/k_tyhzd992/{title}")]
         //Task<HttpResponseMessage> GetActorsAsync(string title);
-        Task<ActorResponse> GetActorsAsync();
+        Task<ActorResponse> GetActorsAsync(string title);
     }
 }

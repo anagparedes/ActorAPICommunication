@@ -32,12 +32,12 @@ namespace WebServiceActorApi.ViewModels
         {
             if(Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
-                actorResponse = await _actorService.GetActorsAsync();
+                actorResponse = await _actorService.GetActorsAsync(Title);
                 if (actorResponse != null)
                 {
                     try
                     {
-                       foreach(var actor in actorResponse.Actors)
+                       foreach( Actor actor in actorResponse.Actors)
                         {
                             Actors.Add(actor);
                         }

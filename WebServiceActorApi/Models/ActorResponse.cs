@@ -5,6 +5,7 @@ namespace WebServiceActorApi.Models
 {
     public class ActorResponse
     {
+
         [JsonProperty("searchType")]
         public string SearchType { get; set; }
 

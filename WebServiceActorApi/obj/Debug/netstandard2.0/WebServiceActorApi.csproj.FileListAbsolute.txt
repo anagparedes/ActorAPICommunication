@@ -17,4 +17,3 @@ C:\Users\Ana\Desktop\Mobile Dev HW\Practica#5\WebServiceActorApi\WebServiceActor
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#5\WebServiceActorApi\WebServiceActorApi\obj\Debug\netstandard2.0\Views\ComingSoonPage.xaml.g.cs
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#5\WebServiceActorApi\WebServiceActorApi\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#5\WebServiceActorApi\WebServiceActorApi\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
-C:\Users\Ana\Desktop\Mobile Dev HW\Practica#5\WebServiceActorApi\WebServiceActorApi\obj\Debug\netstandard2.0\WebServiceActorApi.csproj.AssemblyReference.cache

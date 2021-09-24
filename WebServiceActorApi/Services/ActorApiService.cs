@@ -10,12 +10,12 @@ namespace WebServiceActorApi.Services
         static string _apiKey = "k_tyhzd992";
         IJsonSerializer serializer = new JsonSerializerService();
         //IActorApiService _actorApi;
-        public async Task<ActorResponse> GetActorsAsync()
+        public async Task<ActorResponse> GetActorsAsync(string title)
         {
             ActorResponse actorResponse = new ActorResponse();
             HttpClient httpClient = new HttpClient();
 
-            string uriString = $"https://imdb-api.com/en/API/SearchName/k_tyhzd992/NataliePortman";
+            string uriString = $"https://imdb-api.com/en/API/SearchName/{_apiKey}/{title}";
             var request = new HttpRequestMessage()
             {
 
