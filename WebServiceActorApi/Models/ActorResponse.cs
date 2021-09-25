@@ -1,21 +1,23 @@
-﻿using Newtonsoft.Json;
+﻿
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace WebServiceActorApi.Models
 {
     public class ActorResponse
     {
 
-        [JsonProperty("searchType")]
+        [JsonPropertyName("searchType")]
         public string SearchType { get; set; }
 
-        [JsonProperty("expression")]
+        [JsonPropertyName("expression")]
         public string Expression { get; set; }
 
-        [JsonProperty("results")]
+        [JsonPropertyName("results")]
         public List<Actor> Actors { get; set; }
 
-        [JsonProperty("errorMessage")]
+        [JsonPropertyName("errorMessage")]
         public string ErrorMessage { get; set; }
 
         //public string SearchType { get; set; }

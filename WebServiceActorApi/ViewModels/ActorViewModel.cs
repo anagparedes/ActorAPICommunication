@@ -15,9 +15,9 @@ namespace WebServiceActorApi.ViewModels
         public ObservableCollection<Actor> Actors { get; set; } = new ObservableCollection<Actor>();
         public ICommand SearchCommand { get; set; }
         public ActorResponse actorResponse = new ActorResponse();
-        public string Title { get; set; }
+      public string Name { get; set; }
         IActorApiService _actorService;
-        public string Image { get; set; }
+       
 
 
         public ActorViewModel(IActorApiService actorApiService)
@@ -33,7 +33,7 @@ namespace WebServiceActorApi.ViewModels
         {
             if(Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
-                actorResponse = await _actorService.GetActorsAsync(Title);
+                actorResponse = await _actorService.GetActorsAsync(Name);
                 if (actorResponse != null)
                 {
                     try

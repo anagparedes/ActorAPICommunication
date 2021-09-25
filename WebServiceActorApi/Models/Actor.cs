@@ -1,26 +1,23 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace WebServiceActorApi.Models
 {
     public class Actor
     {
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
 
-        [JsonProperty("resultType")]
+        [JsonPropertyName("resultType")]
         public string ResultType { get; set; }
 
-        [JsonProperty("image")]
+        [JsonPropertyName("image")]
         public string Image { get; set; }
 
-        [JsonProperty("title")]
+        [JsonPropertyName("title")]
         public string Title { get; set; }
 
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         //public Actor(string image, string title)

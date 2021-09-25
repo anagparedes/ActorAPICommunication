@@ -1,6 +1,5 @@
 ﻿using System.Text.Json;
 
-
 namespace WebServiceActorApi.Services
 {
     public class JsonSerializerService : IJsonSerializer

@@ -1,5 +1,4 @@
 ﻿using Refit;
-using System.Net.Http;
 using System.Threading.Tasks;
 using WebServiceActorApi.Models;
 
@@ -20,7 +19,7 @@ namespace WebServiceActorApi.Services
         public async Task<ActorResponse> GetActorsAsync(string title)
         {
             var response = await _actorApi.GetActorsAsync(title);
-            if (response.IsSuccessStatusCode)
+             if (response.IsSuccessStatusCode)
             {
                 var payload = await response.Content.ReadAsStringAsync();
                 var actorResponse = serializer.Deserialize<ActorResponse>(payload);

@@ -27,7 +27,7 @@
                 <Setter Property="FontSize" Value="Large"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="TextColor" Value="#161616"/>
+                <Setter Property="TextColor" Value="#e6ece2"/>
                 <Setter Property="Padding" Value="15"/>
                 <Setter Property="Grid.ColumnSpan" Value="2"/>
             </Style>
