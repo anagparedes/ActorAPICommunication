@@ -11,3 +11,10 @@ EndPoint used: Get Actors
  <img src="https://github.com/anagparedes/ActorAPICommunication/blob/main/Screenshots/3.png">
  <img src="https://github.com/anagparedes/ActorAPICommunication/blob/main/Screenshots/4.png">
 </p>
+
+<h2 align="left">Connectivity Handler</h2>
+
+<p align="left">
+ <img src="https://github.com/anagparedes/ActorAPICommunication/blob/main/Screenshots/5.png">
+</p>
+
