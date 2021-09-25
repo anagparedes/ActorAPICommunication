@@ -16,12 +16,13 @@ namespace WebServiceActorApi.ViewModels
         public ICommand SearchCommand { get; set; }
         public ActorResponse actorResponse = new ActorResponse();
         public string Title { get; set; }
-        ActorApiService _actorService = new ActorApiService();
+        IActorApiService _actorService;
         public string Image { get; set; }
 
 
-        public ActorViewModel()
+        public ActorViewModel(IActorApiService actorApiService)
         {
+            _actorService = actorApiService;
             SearchCommand = new Command(OnSearch);
             
         }
@@ -37,7 +38,7 @@ namespace WebServiceActorApi.ViewModels
                 {
                     try
                     {
-                       foreach( Actor actor in actorResponse.Actors)
+                       foreach(var actor in actorResponse.Actors)
                         {
                             Actors.Add(actor);
                         }

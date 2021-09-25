@@ -18,7 +18,7 @@ namespace WebServiceActorApi.Views
         public ActorPage()
         {
             InitializeComponent();
-            BindingContext = new ActorViewModel();
+           
 
 
             
