@@ -1,7 +1,8 @@
 # ActorAPICommunication
 An example of communication between a project in Xamarin.Forms and a REST API for consume it. 
 My workgroup choosed the IMDBAPI (https://imdb-api.com) for receiving movie, cast information, etc.
-EndPoint used: Get Actors
+
+EndPoint used: Get Actors *https://imdb-api.com/en/API/SearchName/{apiKey}/{actorName}*
 
 <h2 align="left">API Communication Test</h2>
 
